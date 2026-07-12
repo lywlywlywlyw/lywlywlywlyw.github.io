@@ -85,8 +85,8 @@ html {
 }
 
 /* 减少页面右侧空白，让主内容区更宽 */
-#main {
-  @include breakpoint($x-large) {
-    max-width: 1440px;
-  }
-}
+// #main {
+//   @include breakpoint($x-large) {
+//     max-width: 1440px;
+//   }
+// }
