@@ -33,15 +33,15 @@
 #     url: /markdown/
 
 main:
-  - title: "About"
+  - title: "About Me"
     url: /#about
   - title: "News"
     url: /#news
   - title: "Publications"
     url: /#publications
-  - title: "Honors"
+  - title: "Honors and Awards"
     url: /#honors-and-awards
-  - title: "Education"
+  - title: "Educations"
     url: /#educations
   - title: "Internships"
     url: /#internships
