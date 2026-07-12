@@ -37,3 +37,56 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* 覆盖默认的基础字号，让整体字体更大一点 */
+html {
+  font-size: 18px; /* 默认是16px，可以根据喜好调整 */
+
+  /* 在不同屏幕尺寸下也可以微调，让移动端阅读更舒适 */
+  @include breakpoint($medium) {
+    font-size: 18px; /* 在中等屏幕上 */
+  }
+
+  @include breakpoint($large) {
+    font-size: 20px; /* 在大屏幕上 */
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 22px; /* 在超大屏幕上 */
+  }
+}
+
+/* 侧边栏头像放大 */
+.author__avatar img {
+  max-width: 230px;
+}
+
+.sidebar {
+  @include breakpoint($x-large) {
+    max-width: 300px;
+  }
+
+  .author__name {
+    font-size: $type-size-4;
+  }
+
+  .author__bio {
+    font-size: $type-size-5;
+  }
+
+  p,
+  li {
+    font-size: $type-size-5;
+  }
+
+  .author__urls a {
+    font-size: $type-size-5;
+  }
+}
+
+/* 减少页面右侧空白，让主内容区更宽 */
+#main {
+  @include breakpoint($x-large) {
+    max-width: 1440px;
+  }
+}
